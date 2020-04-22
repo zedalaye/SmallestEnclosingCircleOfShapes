@@ -1,0 +1,9 @@
+*.$manifest
+*.local
+*.dsk
+*.identcache
+*.vrc
+*.~dsk
+Win32
+__history
+__recovery

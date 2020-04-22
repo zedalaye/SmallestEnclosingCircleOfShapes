@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'SmallestCircle - By PrY (2020)'
+  ClientHeight = 408
+  ClientWidth = 728
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object pbCanvas: TPaintBox
+    Align = Client
+    Size.Width = 728.000000000000000000
+    Size.Height = 408.000000000000000000
+    Size.PlatformDefault = False
+    OnPaint = pbCanvasPaint
+    object lbFPS: TLabel
+      Anchors = [akTop, akRight]
+      Position.X = 656.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+      Text = 'lbFPS'
+      TabOrder = 2
+    end
+  end
+  object tmrComputeFPS: TTimer
+    OnTimer = tmrComputeFPSTimer
+    Left = 328
+    Top = 145
+  end
+end
